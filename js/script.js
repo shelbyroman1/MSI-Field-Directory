@@ -2,7 +2,7 @@ window.addEventListener('DOMContentLoaded', async event => {
     // Simple-DataTables
     // https://github.com/fiduswriter/Simple-DataTables/wiki
     // Fetch the JSON data
-    const response = await fetch('_fields.json');
+    const response = await fetch('fields.json');
     const fields = await response.json();
 
     // Get the table body
