@@ -15,17 +15,29 @@ window.addEventListener('DOMContentLoaded', async event => {
     fields.forEach(field => {
         const row = document.createElement('tr');
         row.innerHTML = `
-            <td>${field.name}</td>
-            <td>${field.sublocation}</td>
-            <td>${field.address}</td>
+            <td>${field['Field Name']}</td>
+            <td>${field['Sub-Location']}</td>
+            <td>${field['School Catchment Area']}</td>
+            <td>${field['Address']}</td>
+            <td>${field['Usage Type']}</td>
             <td>${field['Surface Type']}</td>
+            <td>${field['Slope']}</td>
+            <td>${field['Evenness']}</td>
+            <td>${field['Divots']}</td>
             <td>${field['Suitable Game Size']}</td>
-            <td>${field['Size of goals']}</td>
-            <td>${field['Parking capacity']}</td>
-            <td>${field['Parking lot location']}</td>
+            <td>${field['Lined']}</td>
+            <td>${field['Goals']}</td>
+            <td>${field['Goal Size']}</td>
+            <td>${field['Goal Mobility']}</td>
+            <td>${field['Goal Type']}</td>
+            <td>${field['Parking Capacity']}</td>
+            <td>${field['Parking Lot Location']}</td>
+            <td>${field['Lights']}</td>
             <td>${field['Seating']}</td>
             <td>${field['Restrooms']}</td>
             <td>${field['Playgrounds']}</td>
+            <td>${field['Track']}</td>
+            <td>${field['Attachments']}</td>
         `;
         tbody.appendChild(row);
     });
