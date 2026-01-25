@@ -63,8 +63,17 @@
                                 <div id="collapseGuide" class="accordion-collapse collapse" aria-labelledby="headingGuide" data-bs-parent="#fieldInfoAccordion">
                                 <div class="accordion-body">
                                     <ul class="mb-0">
+                                    <li><strong>Usage Type</strong>: Type of activity this field is used for <i>(Practice Only / Game Only / Both game & practice)</i>.</li>
                                     <li><strong>Surface Type</strong>: Type of grass or turf on the field <i>(Turf / Bermuda grass / Standard grass / Weeds/patches / Mostly dirt)</i>.</li>
+                                    <li><strong>Slope</strong>: General slope of the field <i>(Flat / Slight / Moderate / Very Sloped)</i>.</li>
+                                    <li><strong>Evenness</strong>: General evenness of the field <i>(Flat / Slightly Bumpy/Wavy / Very Bumpy/Wavy)</i>.</li>
+                                    <li><strong>Divots</strong>: Whether there are physical divots in the field <i>(Yes / No)</i>.</li>
                                     <li><strong>Suitable Game Size</strong>: Typical match format the field supports <i>(7v7 / 9v9 / 11v11)</i>.</li>
+                                    <li><strong>Lined</strong>: Whether the field is lined <i>(Yes / No)</i>.</li>
+                                    <li><strong>Goals</strong>: Presence of goals <i>(Yes / No)</i>.</li>
+                                    <li><strong>Goal Size</strong>: Size of the goals (if present) <i>(8 feet tall x 8 yards wide / 7 feet tall x 7 yards wide / 6 feet tall x 6 yards wide)</i>.</li>
+                                    <li><strong>Goal Mobility</strong>: Whether the goals are moveable (if present) <i>(Moveable / Fixed)</i>.</li>
+                                    <li><strong>Goal Type</strong>: Style of the goals (if present) <i>(Box style (with back support) / Post & crossbar only)</i>.</li>
                                     <li><strong>Parking Capacity</strong>: General estimate of the number of parking spaces available at the facility <i>(Small / Medium / Large)</i>.
                                         <ul class="mb-0">
                                             <li>Small = 0-20 parking spaces.</li>
@@ -72,9 +81,12 @@
                                             <li>Large = 50+ parking spaces.</li>
                                         </ul></li>
                                     <li><strong>Parking Lot Location</strong>: General setting of available parking near the field <i>(Residential neighborhood / Commercial/Mixed-Use area / Near major road/highway)</i>.</li>
+                                    <li><strong>Lights</strong>: Whether the field has lighting for evening use <i>(Yes / No)</i>.</li>
                                     <li><strong>Seating</strong>: <i>Bleachers / Benches / None available</i>.</li>
                                     <li><strong>Restrooms</strong>: On-site restroom availability <i>(Permanent restrooms / Temporary restrooms, such as PortaPotties / None available)</i>.</li>
                                     <li><strong>Playgrounds</strong>: Whether there is a playground at the facility or nearby. (<i>Yes / No</i>).</li>
+                                    <li><strong>Track</strong>: Whether the field has a track <i>(Yes - surrounding the field / Yes - at the facility / No)</i>.</li>
+                                    <li><strong>Attachments</strong>: Images of the field, including the grass, goals, and overall field.</li>
                                     </ul>
                                 </div>
                                 </div>
@@ -128,6 +140,19 @@
                         </div>
                     </div>
                 </main>
+                <footer class="py-4 bg-light mt-auto">
+                    <div class="container-fluid px-4">
+                        <div class="d-flex align-items-center justify-content-between small">
+                            <div class="text-muted">MSI Field Directory</div>
+                            <p class="last-updated">
+                                Last updated: {{ site.time | date: "%B %d, %Y at %H:%M %Z" }}
+                            </p>
+                            <div>
+                                <a href="https://www.msisoccer.org">MSI Website</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
         <script src="js/script.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
