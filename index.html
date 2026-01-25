@@ -147,15 +147,33 @@
                     <div class="container-fluid px-4">
                         <div class="d-flex align-items-center justify-content-between small">
                             <div class="text-muted">MSI Field Directory</div>
-                            <p class="last-updated">
+                            <!-- <p class="last-updated">
                                 Last updated: {{ site.time | date: "%B %d, %Y at %H:%M %Z" }}
-                            </p>
+                            </p> -->
+                            <p id="last-updated"></p>
                             <div>
                                 <a href="https://www.msisoccer.org">MSI Website</a>
                             </div>
                         </div>
                     </div>
                 </footer>
+        <script>
+            const buildTimeUTC = "{{ site.time | date: '%Y-%m-%dT%H:%M:%SZ' }}";
+
+            const date = new Date(buildTimeUTC);
+            const formatted = date.toLocaleString("en-US", {
+            timeZone: "America/New_York",
+            year: "numeric",
+            month: "long",
+            day: "numeric",
+            hour: "numeric",
+            minute: "2-digit",
+            timeZoneName: "short"
+            });
+
+            document.getElementById("last-updated").textContent =
+            "Last updated: " + formatted;
+        </script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
         <script src="js/script.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
