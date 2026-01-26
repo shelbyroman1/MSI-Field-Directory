@@ -15,28 +15,28 @@ window.addEventListener('DOMContentLoaded', async event => {
     fields.forEach(field => {
         const row = document.createElement('tr');
         row.innerHTML = `
-            <td>${field['Field Name']}</td>
-            <td>${field['Sub-Location']}</td>
-            <td>${field['School Catchment Area']}</td>
-            <td>${field['Address']}</td>
-            <td>${field['Usage Type']}</td>
-            <td>${field['Surface Type']}</td>
-            <td>${field['Slope']}</td>
-            <td>${field['Evenness']}</td>
-            <td>${field['Divots']}</td>
-            <td>${field['Suitable Game Size']}</td>
-            <td>${field['Lined']}</td>
-            <td>${field['Goals']}</td>
-            <td>${field['Goal Size']}</td>
-            <td>${field['Goal Mobility']}</td>
-            <td>${field['Goal Type']}</td>
-            <td>${field['Parking Capacity']}</td>
-            <td>${field['Parking Lot Location']}</td>
-            <td>${field['Lights']}</td>
-            <td>${field['Seating']}</td>
-            <td>${field['Restrooms']}</td>
-            <td>${field['Playgrounds']}</td>
-            <td>${field['Track']}</td>
+            <td>${field['field_name']}</td>
+            <td>${field['sub_location']}</td>
+            <td>${field['school_catchment_area']}</td>
+            <td>${field['address']}</td>
+            <td>${field['usage_type']}</td>
+            <td>${field['surface_type']}</td>
+            <td>${field['slope']}</td>
+            <td>${field['evenness']}</td>
+            <td>${field['divots']}</td>
+            <td>${field['suitable_game_size']}</td>
+            <td>${field['lined']}</td>
+            <td>${field['goals']}</td>
+            <td>${field['goal_size']}</td>
+            <td>${field['goal_mobility']}</td>
+            <td>${field['goal_type']}</td>
+            <td>${field['parking_capacity']}</td>
+            <td>${field['parking_lot_location']}</td>
+            <td>${field['lights']}</td>
+            <td>${field['seating']}</td>
+            <td>${field['restrooms']}</td>
+            <td>${field['playgrounds']}</td>
+            <td>${field['track']}</td>
             <td>${field['Attachments']}</td>
         `;
         tbody.appendChild(row);
